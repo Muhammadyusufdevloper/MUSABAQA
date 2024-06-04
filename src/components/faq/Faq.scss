@@ -1,0 +1,121 @@
+.faq {
+  position: relative;
+  &__img-box {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+    img {
+      //   width: 100%;
+    }
+  }
+  &__info-boxes {
+    position: relative;
+    margin-bottom: -150px;
+  }
+  &__info-boxes__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__info-boxes__cards {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 49px 61px 114px;
+    @media (max-width: 960px) {
+      padding: 35px 45px 62px;
+      gap: 20px;
+    }
+    @media (max-width: 780px) {
+      padding: 35px 25px 62px;
+      gap: 10px;
+    }
+    @media (max-width: 560px) {
+      padding: 25px 15px 40px;
+    }
+    @media (max-width: 500px) {
+      flex-direction: column;
+      padding: 25px 15px 80px;
+    }
+  }
+  &__info-boxes__card {
+    max-width: 250px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    @media (max-width: 560px) {
+      gap: 10px;
+    }
+    svg {
+      color: #ffffff;
+      width: 20px;
+      height: 20px;
+      path {
+        font-size: 20px;
+      }
+      @media (max-width: 560px) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  &__info-boxes-liner {
+    width: 1px;
+    height: 130px;
+    background: #d3c3af;
+    @media (max-width: 500px) {
+      height: 1px;
+      width: 130px;
+    }
+  }
+  &__info-boxes__card__title {
+    margin-bottom: 26px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #f2f5f5;
+    @media (max-width: 960px) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    @media (max-width: 700px) {
+      font-size: 16px;
+      margin-bottom: 12px;
+      line-height: 12px;
+    }
+  }
+  &__info-boxes__card__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #ffffff;
+    @media (max-width: 960px) {
+      font-size: 14px;
+    }
+    @media (max-width: 700px) {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 960px) {
+  }
+  &__map-boxes {
+    height: 550px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 1210px) {
+      height: 450px;
+    }
+    @media (max-width: 950px) {
+      height: 420px;
+    }
+  }
+}

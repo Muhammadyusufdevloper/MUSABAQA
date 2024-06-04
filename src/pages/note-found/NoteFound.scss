@@ -1,0 +1,45 @@
+.note-found {
+  width: 100%;
+  height: calc(100vh - (94px + 282px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__wrapper {
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__card {
+    position: relative;
+    z-index: 22;
+    padding: 92px 120px 100px;
+  }
+  h1 {
+    font-size: 500px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #ffffff;
+  }
+  button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: #ffffff;
+  }
+}

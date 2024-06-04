@@ -1,0 +1,207 @@
+.cart__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 22px;
+  max-width: 1214px;
+}
+.cart {
+  &__title {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 51px;
+    margin-bottom: 23px;
+    color: #313131;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 38px;
+    @media (max-width: 610px) {
+      align-items: flex-start;
+      gap: 15px;
+    }
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
+  }
+  &__img-boxes {
+    width: 100px;
+    height: 106px;
+    background-color: #ffffff;
+    @media (max-width: 810px) {
+      width: 135px;
+      height: 146px;
+    }
+  }
+  &__card__base-part {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__info-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 28px 0;
+    border-bottom: 1px solid #e4e4e2;
+    @media (max-width: 810px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__info-boxes__left-info-card {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+    }
+  }
+  &__info-boxes__title {
+    max-width: 318px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #313131;
+    @media (max-width: 910px) {
+      font-size: 13px;
+    }
+    @media (max-width: 610px) {
+      font-size: 12px;
+    }
+  }
+  &__info-boxes__size-text {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    color: #afafaf;
+    @media (max-width: 910px) {
+      font-size: 13px;
+    }
+    @media (max-width: 610px) {
+      font-size: 11px;
+    }
+  }
+  &__info-boxes__center-info-card {
+    display: flex;
+    align-items: center;
+    gap: 92px;
+    @media (max-width: 1000px) {
+      gap: 60px;
+    }
+    @media (max-width: 910px) {
+      gap: 40px;
+    }
+    @media (max-width: 610px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__info-boxes__price-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-wrap: nowrap;
+    @media (max-width: 910px) {
+      font-size: 18px;
+    }
+  }
+  &__info-boxes__center-info-card__buttons-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    border: 0.5px solid #afafaf;
+    padding: 9px 0;
+    border-radius: 5px;
+    span {
+      flex-grow: 1;
+      text-align: center;
+    }
+    button {
+      width: 33px;
+      height: 30px;
+      border: none;
+      background-color: transparent;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 31px;
+      color: #000000;
+
+      &:first-child {
+        border-right: 1px solid #c4c4c4;
+      }
+      &:last-child {
+        border-left: 1px solid #c4c4c4;
+      }
+    }
+    @media (max-width: 910px) {
+      width: 120px;
+    }
+  }
+  &__info-boxes__center-info-card__sum-card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    span {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #000000;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 31px;
+      color: #000000;
+      @media (max-width: 910px) {
+        font-size: 18px;
+      }
+      @media (max-width: 610px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__info-boxes__right-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+    @media (max-width: 810px) {
+      display: none;
+    }
+    @media (max-width: 610px) {
+      display: flex;
+      svg {
+        color: #afafaf;
+      }
+    }
+  }
+  &__right-info-card {
+    display: none;
+    @media (max-width: 810px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background-color: transparent;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    @media (max-width: 610px) {
+      display: none;
+    }
+  }
+}
